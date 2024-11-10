@@ -10,6 +10,7 @@ import animationData from "../../data/confettie.json";
 import { motion, useScroll, useTransform } from "framer-motion";
 import Marquee from "react-fast-marquee";
 import { Spotlight } from "./Spotlight";
+import { AuroraBackground } from "./aurora-background";
 export const BentoGrid = ({ className, children }) => {
   return (
     <div
@@ -113,6 +114,7 @@ export const BentoGridItem = ({
           {/* {id === 2 && <GridGlobe />} */}
 
           {id === 1 && (
+           
             <div className="mt-3 grid gap-5 grid-rows-6 row-span-1 col-span-1 w-full grid-cols-1 font-serif">
          
               <h3 className="font-bold md:text-xl">
@@ -150,7 +152,9 @@ export const BentoGridItem = ({
                   8745971753
                 </span>
               </h3>
+
             </div>
+         
           )}
           {id === 3 && (
             <motion.div
